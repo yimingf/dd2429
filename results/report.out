@@ -1,0 +1,149 @@
+dd2429, lab 1 & 2, report
+---
+yiming fan, 3/10/2016
+all figures saved in the same folder
+
+---
+
+*** matlab console output for lab 1 ***
+
+---
+
+Between view 1 and ref. view; average error:  1.12; maximum error:  1.88 
+Between view 2 and ref. view; average error:  0.61; maximum error:  1.83 
+Between view 3 and ref. view; average error:  0.00; maximum error:  0.00 
+
+The panoramic image will be of size (x,y): 560 , 271
+
+--------------------
+ HOMOGRAPHIES ERROR 
+--------------------
+
+homographies_error(:,:,1) =
+
+   1.0e-12 *
+
+   -0.0004   -0.0005         0
+    0.0044   -0.0055   -0.3595
+    0.0001   -0.0001   -0.0088
+
+
+homographies_error(:,:,2) =
+
+   1.0e-12 *
+
+    0.0468    0.0195         0
+   -0.0115    0.0180   -0.3122
+    0.0001    0.0003    0.0050
+
+
+homographies_error(:,:,3) =
+
+   1.0e-13 *
+
+   -0.0178   -0.0049    0.7715
+   -0.0043   -0.0155    0.2124
+    0.0007    0.0006    0.0078
+
+----------------------------
+ NORMALIZATION MATRIX ERROR 
+----------------------------
+
+norm_mat_error(:,:,1) =
+
+   1.0e-16 *
+
+         0         0         0
+         0         0         0
+         0         0   -0.2776
+
+
+norm_mat_error(:,:,2) =
+
+   1.0e-16 *
+
+         0         0         0
+         0         0         0
+         0         0   -0.5551
+
+
+norm_mat_error(:,:,3) =
+
+     0     0     0
+     0     0     0
+     0     0     0
+
+---
+
+matlab console output for lab 2
+
+---
+
+The reprojection error is: 
+Average error: 25.39pixel; Maximum error: 43.68pixel
+
+------------------------
+ ESSENTIAL MATRIX ERROR 
+------------------------
+
+E_error =
+
+   1.0e-13 *
+
+    0.0680    0.1155    0.0283
+   -0.2226    0.0472         0
+   -0.0240   -0.0477    0.0129
+
+
+E_rank =
+
+     2
+
+----------------------------------
+ POINT CLOUD RECONSTRUCTION ERROR 
+----------------------------------
+
+point_cloud_error =
+
+   1.0e-15 *
+
+   -0.0278         0    0.0278    0.0971    0.0555    0.0278         0         0
+   -0.0971   -0.0971    0.2359    0.2151   -0.0833    0.7494   -0.6661   -0.1804
+   -0.4441   -0.2220    0.2220   -0.4441    0.2220    0.4441    0.6661   -0.4441
+
+-----------------------------
+ CAMERA RECONSTRUCTION ERROR 
+-----------------------------
+
+cameras_error(:,:,1) =
+
+     0     0     0     0
+     0     0     0     0
+     0     0     0     0
+
+
+cameras_error(:,:,2) =
+
+   1.0e-15 *
+
+    0.1110    0.8327         0   -0.2220
+    0.3331         0   -0.5551   -0.3331
+    0.0001    0.0001    0.0002         0
+
+
+camera_centers_error =
+
+   1.0e-15 *
+
+         0   -0.1110
+         0         0
+         0   -0.1388
+         0         0
+
+---------------------------
+ RE-PROJECTION ERROR ERROR 
+---------------------------
+The true average error is:     25.4
+The computed average error is: 25.4
+The true max error is:         43.7
+The computed max error is:     43.7
